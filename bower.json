@@ -1,0 +1,21 @@
+{
+  "name": "timeline",
+  "authors": [
+    "BanahRuslan <ruslanbanah@gmail.com>"
+  ],
+  "description": "",
+  "main": "main.less",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "underscore": "*"
+  }
+}
