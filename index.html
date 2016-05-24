@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- bower:css -->
-    <!-- endinject -->
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <!-- bower:css -->
+  <!-- endinject -->
 
-    <!-- inject:css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- endinject -->
+  <!-- inject:css -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endinject -->
 </head>
-<body>
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Project name</a>
-            <div class="nav-collapse">
-                <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
+<body class="page-login">
+
+<!--<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Project name</a>
+
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      &lt;!&ndash;/.nav-collapse &ndash;&gt;
     </div>
+  </div>
+</div>-->
+
+
+<div class="login">
+  <div class="login-header">
+    <a href="#">
+      <img src="images/login-logo.png" alt="Logo"/>
+    </a>
+  </div>
+  <div class="login-body">
+    <h4>Registration</h4>
+    <p>Enter your personal details below</p>
+    <form role="form">
+      <div class="form-group">
+        <input type="email" placeholder="Email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" class="form-control" id="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+      <div class="login-controll">
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="submit" class="btn btn-default">Back</button>
+      </div>
+    </form>
+  </div>
 </div>
-<div class="container">
-    <div class="row">
-        <form role="form">
-            <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd">
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-    </div>
-</div>
+
+
 </body>
 <!-- inject:js -->
 <script src="js/myAdmin.js"></script>
