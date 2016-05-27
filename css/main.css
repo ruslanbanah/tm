@@ -6749,6 +6749,22 @@ body {
   font-weight: 300;
   margin: 0 0 18px;
 }
+.my-dashboard-list-body {
+  padding: 0 15px;
+}
+.my-dashboard-list-item.__header {
+  padding: 5px 15px;
+  border-bottom: 1px solid #b8b8b8;
+}
+.my-dashboard-list-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #b8b8b8;
+}
+.my-dashboard-list-item .__title,
+.my-dashboard-list-item .__status,
+.my-dashboard-list-item .__date {
+  margin-bottom: 10px;
+}
 .page-login {
   background: #a0b4c9;
   padding-top: 60px;
