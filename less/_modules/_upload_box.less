@@ -1,0 +1,110 @@
+@color-blue: #428ccd;
+
+.sub-header{
+  margin: 0 0 15px;
+  border-bottom: 1px solid #eeeeee;
+  h4{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+.upload-box{
+  background: #fff;
+  padding: 27px 27px 100px;
+
+  .upload-container{
+    border: 3px dashed #e1f2fe;
+    text-align: center;
+    padding: 45px;
+    margin-bottom: 25px;
+
+    .upload-info{
+      color: @color-blue;
+
+      h3{
+        font-size: 21px;
+        font-weight: bold;
+        margin: 0 0 8px;
+      }
+      div{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 10px;
+      }
+
+      button{
+        background: @color-blue;
+        color: #fff;
+        height: 34px;
+        padding: 0 60px;
+        font-size: 13px;
+        font-weight: 600;
+        border: none;
+
+
+        &:hover{
+          background: lighten(@color-blue, 10%);
+          transition: background 0.2s ease;
+        }
+      }
+    }
+  }
+  .form-inline{
+    margin-bottom: 28px;
+    .form-control{
+      min-width: 260px;
+      margin-right: 15px;
+    }
+  }
+  .upload-files{
+    ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap-reverse;;
+      justify-content: flex-start;
+    }
+    li{
+      position: relative;
+      list-style: none;
+      //float: left;
+      margin: auto;
+      border: 2px solid transparent;
+      padding: 2px;
+
+
+      .upload-file-img{
+        width: 167px;
+        height: 125px;
+        background: center center no-repeat;
+        background-size: cover;
+      }
+      .remove{
+        position: absolute;
+        font-size: 20px;
+        line-height: 14px;
+        color: #fff;
+        right: 6px;
+        top: 6px;
+        cursor: pointer;
+        opacity: 0;
+
+        &:hover{
+          color: #b92c28;
+        }
+      }
+
+      &:hover{
+        border: 2px solid #636363;
+        transition: border 0.2s ease;
+
+        .remove{
+          transition: opacity,color 0.2s ease;
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+}
