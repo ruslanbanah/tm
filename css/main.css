@@ -6858,6 +6858,89 @@ body {
   transition: opacity,color 0.2s ease;
   opacity: 1;
 }
+.ticket {
+  position: relative;
+  border: 1px solid #eee;
+  height: 205px;
+  width: 355px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.ticket:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -1px;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: #eee transparent transparent #eee;
+}
+.ticket:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -48px;
+  border: 24px solid;
+  border-color: #fff transparent transparent #fff;
+}
+.ticket-label {
+  position: absolute;
+  left: -1px;
+  top: 10px;
+  padding: 5px 20px;
+  background: #757575;
+  color: #fff;
+  font-size: 12px;
+}
+.ticket-date {
+  color: #6d6d6d;
+  font-size: 12px;
+  text-align: right;
+}
+.ticket-body {
+  margin-top: 15px;
+}
+.ticket-body h4 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.ticket-body p {
+  font-size: 10px;
+  margin: 0;
+}
+.ticket-body-img {
+  float: left;
+}
+.ticket-body-text {
+  margin-left: 118px;
+}
+.ticket-body-text .text {
+  height: 108px;
+  overflow: hidden;
+}
+.ticket .control {
+  margin: 10px 0 0 0;
+}
+.ticket .control .btn {
+  position: relative;
+  padding: 1px 10px;
+  margin-right: 10px;
+}
+.ticket .control .badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
 .page-login {
   background: #a0b4c9;
   padding-top: 60px;

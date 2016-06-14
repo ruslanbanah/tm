@@ -1,0 +1,88 @@
+.ticket{
+  position: relative;
+  border: 1px solid #eee;
+  height: 205px;
+  width: 355px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 20px 0 20px 0;
+
+  // -----
+  margin-left: 20px;
+  margin-top: 20px;
+
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -1px;
+    bottom: -50px;
+    border: 25px solid;
+    border-color: #eee transparent transparent #eee;
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -48px;
+    border: 24px solid;
+    border-color: #fff transparent transparent #fff;
+  }
+  &-label{
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    padding: 5px 20px;
+    background: #757575;
+    color: #fff;
+    font-size: 12px;
+  }
+  &-date{
+    color: #6d6d6d;
+    font-size: 12px;
+    text-align: right;
+  }
+
+  &-body{
+    margin-top: 15px;
+    h4{
+      margin: 0 0 10px;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+    p{
+      font-size: 10px;
+      margin: 0;
+    }
+    &-img{
+      float: left;
+    }
+    &-text{
+      margin-left: 118px;
+      .text{
+        height: 108px;
+        overflow: hidden;
+      }
+    }
+  }
+  .control{
+    margin: 10px 0 0 0;
+    .btn{
+      position: relative;
+      padding: 1px 10px;
+      margin-right: 10px;
+    }
+    .badge{
+      position: absolute;
+      top: -8px;
+      right: -8px;
+    }
+  }
+}
